@@ -1,11 +1,12 @@
 {
   "name": "@revgaming/error",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "http exception handler",
   "homepage": "https://github.com/estagent/error",
   "main": "error.js",
   "license": "ISC",
+  "type": "module",
   "keywords": [
     "javascript",
     "axios",
