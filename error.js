@@ -1,5 +1,3 @@
-import {translate} from '@revgaming/languages'
-
 export default err => {
   let response, data
   if (err.responseJSON || err.responseText) {
@@ -17,12 +15,9 @@ export default err => {
       (typeof data === 'string' ? data : response.statusText)
     )
   } else if (response) {
-    return translate('messages.loading_error', {
-      code: response.status,
-    })
+    return `Http Error [${response.status}]`
   }
   return !err
-    ? translate('messages.requestTimeOut')
-    : err.message ??
-        (typeof err === 'string' ? err : translate('messages.failed'))
+    ? 'Timeout Error'
+    : err.message ?? (typeof err === 'string' ? err : 'error')
 }

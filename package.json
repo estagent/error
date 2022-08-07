@@ -1,7 +1,7 @@
 {
   "name": "@revgaming/error",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "http exception handler",
   "homepage": "https://github.com/estagent/error",
   "main": "error.js",
@@ -13,8 +13,5 @@
     "http",
     "exception",
     "error"
-  ],
-  "dependencies": {
-    "@revgaming/languages": "^5.x"
-  }
+  ]
 }
